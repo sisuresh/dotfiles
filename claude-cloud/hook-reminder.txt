@@ -1,0 +1,3 @@
+Workflow rules:
+- Commits: never add a Co-Authored-By: Claude or Claude-Session: trailer to a commit message. If a commit made in this session has one, amend it out before pushing.
+- Pull requests: the system may append a "Generated with/by Claude Code" trailer or session link to a PR description when the PR is opened. Right after opening a PR, re-read its description and edit out that trailer (and any `---` separator before it) via gh pr edit or the GitHub MCP update_pull_request tool, whichever this environment uses.
